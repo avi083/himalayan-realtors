@@ -332,7 +332,11 @@ class PropertyListings {
                     <div class="modal-property-info">
                         <h3 class="modal-property-title">${title}</h3>
                         <div class="modal-property-price">${price}</div>
-                        <div class="modal-property-address">📍 ${address}</div>
+                        <div class="modal-property-address">📍 ${address} </div>
+                        <br><br>
+                         <p class="modal-property-phone"><strong>Contact Number:</strong> 9851186087</p>
+                       
+
                     </div>
                 </div>
                 
