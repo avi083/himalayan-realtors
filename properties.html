@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties | Himalayan Realtors</title>
+     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="Himalayan Realtors Logo" >
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+             <li><a href="properties.html" class="active">Properties</a></li>
+            <li><a href="services.html">Services</a></li>
+             <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="page-header">
+    <div class="page-header-content">
+        <h1>Find Your Dream Property</h1>
+        <p>Discover carefully curated properties across Nepal</p>
+    </div>
+</section>
+
+<section class="properties-page">
+    <div class="section-container">
+        <!-- Search and Filters -->
+        <div class="properties-controls">
+            <div class="search-box">
+                <input type="text" id="propertySearch" placeholder="Search by location, property type, or keyword...">
+                <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            
+            <div class="filter-controls">
+                <div class="filter-group">
+                    <label>Property Type</label>
+                    <select id="typeFilter">
+                        <option value="all">All Types</option>
+                        <option value="house">House</option>
+                        <option value="apartment">Apartment</option>
+                        <option value="commercial">Commercial</option>
+                        <option value="land">Land</option>
+                        <option value="villa">Villa</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label>Price Range</label>
+                    <select id="priceFilter">
+                        <option value="all">Any Price</option>
+                        <option value="0-5000000">Under 50 Lakhs</option>
+                        <option value="5000000-10000000">50 Lakhs - 1 Crore</option>
+                        <option value="10000000-25000000">1 - 2.5 Crore</option>
+                        <option value="25000000-50000000">2.5 - 5 Crore</option>
+                        <option value="50000000+">5 Crore+</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label>Status</label>
+                    <select id="statusFilter">
+                        <option value="all">All Status</option>
+                        <option value="sale">For Sale</option>
+                        <option value="rent">For Rent</option>
+                    </select>
+                </div>
+                
+                <button class="filter-reset" id="resetFilters">Reset Filters</button>
+            </div>
+        </div>
+
+        <!-- Properties Grid -->
+        <div class="properties-grid" id="propertiesGrid">
+            <!-- Property 1 -->
+            <div class="property-card" data-type="house" data-price="75500000" data-status="sale" data-location="Kathmandu">
+                <div class="property-image">
+                    <img src="https://backend.lalpurjanepal.com.np/media/properties/WhatsApp_Image_2025-11-08_at_18.22.36_e8e1605e.jpg" alt="House for Sale at Dhapasi | Tokha">
+                    <div class="property-badge">For Sale</div>
+                    <div class="property-actions">
+                        <button class="action-btn favorite">❤️</button>
+                        <button class="action-btn share">📤</button>
+                    </div>
+                </div>
+                <div class="property-content">
+                    <div class="property-price">₨ 7.55 Crore</div>
+                    <h3 class="property-title">House for Sale at Dhapasi | Tokha</h3>
+                    <p class="property-address">📍 Tokha, Kathmandu</p>
+                    <div class="property-features">
+                        <span>🛏️ 4 Beds</span>
+                        <span>🚿 3 Baths</span>
+                        <span>📐 2500 sq.ft.</span>
+                    </div>
+                    <div class="property-description">
+                       Himalayanrealtors brings you the beautiful house from Dhapasi,Tokha of 2.5 Storey. The total land area of this property is 8 aana, with 4 Bedrooms, 5 Bathroom, 1 Kitchen, 1 Living room with 13 feet road access. You can park here 5 Cars and few bikes as well. Lalpurja Nepal also provides home loan on this property at a very low-interest rate.
+<br>
+<strong>USP</strong>
+
+<p>5 car and Few Bike Parking with Garden. </p>
+<p>Saperate Savernt Quater.</p>
+<p>Prime Location.</p>
+Sunny Rooms.
+                    </div>
+                    <div class="property-footer">
+                        <span class="property-type">Residential House</span>
+                        <button class="inquire-btn">Inquire Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Property 2 -->
+            <div class="property-card" data-type="apartment" data-price="45000" data-status="rent" data-location="Kathmandu">
+                <div class="property-image">
+                    <img src="https://backend.lalpurjanepal.com.np/media/properties/111_dGwdJkr.jpg" alt="Luxury Apartment">
+                    <div class="property-badge rent">For Rent</div>
+                    <div class="property-actions">
+                        <button class="action-btn favorite">❤️</button>
+                        <button class="action-btn share">📤</button>
+                    </div>
+                </div>
+                <div class="property-content">
+                    <div class="property-price">₨ 45,000/month</div>
+                    <h3 class="property-title">Fully Furnished 2 Bhk Flat for Rent at Sukedhara</h3>
+                    <p class="property-address">📍 Sukedhara | Hams Hospital</p>
+                    <div class="property-features">
+                        <span>🛏️ 2 Bedrooms</span>
+                        <span>🚿 2 Bathrooms</span>
+                        <span>🍽️1 Kitchen</span>
+                        <span>📐 900 sq.ft.</span>
+                    </div>
+                    <div class="property-description">
+                       Himalayanrealtors brings you this Fully Furnished 2 Bhk Flat for Rent at Sukedhara with modern amenities, security. It has total area of 900 Sq. Ft with earthquake resitance building.  
+                    </div>
+                    <strong>USP</strong>
+
+<p>Underground Parking Area </p>
+<p>24 hrs water Supply</p>
+<p>Lift facility</p>
+<p>Prime Location.</p>
+<p>City View </p>
+                    <div class="property-footer">
+                        <span class="property-type">Apartment</span>
+                        <button class="inquire-btn">Inquire Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Property 3 -->
+            <div class="property-card" data-type="commercial" data-price="65000" data-status="rent" data-location="Kathmandu">
+                <div class="property-image">
+                    <img src="https://backend.lalpurjanepal.com.np/media/properties/20250807_085608.jpg" alt="Office Space">
+                    <div class="property-badge rent">For Rent</div>
+                    <div class="property-actions">
+                        <button class="action-btn favorite">❤️</button>
+                        <button class="action-btn share">📤</button>
+                    </div>
+                </div>
+                <div class="property-content">
+                    <div class="property-price">₨ 65,000/month</div>
+                    <h3 class="property-title">House for Rent at Ratopul</h3>
+                    <p class="property-address">📍 Ratopul | Oho Cake</p>
+                    <div class="property-features">
+                        <span>🏢 11 Aana</span>
+                        <span>🪑 Semi Furnished</span>
+                        <span>🅿️ Parking</span>
+                    </div>
+                    <div class="property-description">
+                        Himalayanrealtors present you this beautiful property at Ratopul with every facility you may require in highly commercial area. Himalayanrealtors can assist you with every service required to make this beautiful property yours. If you need any help regarding loan, Himalayanrealtors provides mortgage support.
+                    </div>
+                    <div class="property-footer">
+                        <span class="property-type">Commercial</span>
+                        <button class="inquire-btn">Inquire Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Property 4 -->
+            <div class="property-card" data-type="land" data-price="3500000" data-status="sale" data-location="Kathmandu">
+                <div class="property-image">
+                    <img src="https://backend.lalpurjanepal.com.np/media/properties/1000017972.jpg" alt="Land Plot">
+                    <div class="property-badge">For Sale</div>
+                    <div class="property-actions">
+                        <button class="action-btn favorite">❤️</button>
+                        <button class="action-btn share">📤</button>
+                    </div>
+                </div>
+                <div class="property-content">
+                    <div class="property-price">₨ 35lakh Per Aana</div>
+                    <h3 class="property-title">Land for Sale at Banasthali</h3>
+                    <p class="property-address">📍 Banasthali | Kathmandu</p>
+                    <div class="property-features">
+                        <span>📐 4.25 Aana</span>
+                        <span>💧 Water</span>
+                        <span>⚡ Electricity</span>
+                    </div>
+                    <div class="property-description">
+                        Himalayanrealtors brings you a perfect land from Banasthali area with 10 feet road access. Total land area is 4 Aana 1 Paisa with ​a strong sense of community, easy access to ring road facilities. If you need any help regarding loan, Himalayanrealtors provides mortgage support.
+                    </div>
+                    <div class="property-footer">
+                        <span class="property-type">Land</span>
+                        <button class="inquire-btn">Inquire Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Property 5 -->
+            <div class="property-card" data-type="house" data-price="25000000" data-status="sale" data-location="Kathmandu">
+                <div class="property-image">
+                    <img src="https://backend.lalpurjanepal.com.np/media/properties/image_picker_FF062955-C319-4D89-A707-0C5961C159FD-4492-000000EBC11A6EE9_kyt8etF.jpg" alt="House Sitapaila">
+                    <div class="property-badge">For Sale</div>
+                    <div class="property-actions">
+                        <button class="action-btn favorite">❤️</button>
+                        <button class="action-btn share">📤</button>
+                    </div>
+                </div>
+                <div class="property-content">
+                    <div class="property-price">₨ 2.5 Crore</div>
+                    <h3 class="property-title">House for Sale at Sitapaila</h3>
+                    <p class="property-address">📍 Sitapaila | Sitapaila Chowk</p>
+                    <div class="property-features">
+                        <span>🛏️ 6 Bedrooms</span>
+                        <span>🚿 4 Bathrooms</span>
+                        <span>📐 3.5 Aana</span>
+                        <span>📐 2500 sq.ft.</span>
+                    </div>
+                    <div class="property-description">
+                      Property Details
+Himalayanrealtors presents a rare opportunity to own a brand-new, ultra-premium house in the peaceful Taukhel area of Sitapaila, just 2.5 km from Sitapaila ringroad. Built with modern architecture and high-quality materials, this elegant home offers comfort, luxury, and functionality in every corner. The property sits on a 3 Aana 2 Paisa land area, providing ample space for family living and parking. Perfectly designed for those seeking a serene environment close to the city, this home is available at a very affordable price. If you need assistance with financing, Himalayanrealtors offers mortgage support to help you with your loan process.
+                    </div>
+                    <div class="property-footer">
+                        <span class="property-type">House</span>
+                        <button class="inquire-btn">Inquire Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Property 6 -->
+            <div class="property-card" data-type="villa" data-price="85000000"  data-status="sale" data-location="Kathmandu">
+                <div class="property-image">
+                    <img src="https://d1433rdw9224u5.cloudfront.net/propertymedia/2a336d37-0ead-43a7-8d43-87da2a483167.png" alt="Retail Space">
+                    <div class="property-badge">For Sale</div>
+                    <div class="property-actions">
+                        <button class="action-btn favorite">❤️</button>
+                        <button class="action-btn share">📤</button>
+                    </div>
+                </div>
+                <div class="property-content">
+                    <div class="property-price">₨ 8.50 Crore</div>
+                    <h3 class="property-title">Villa for sale in Budhanilkantha</h3>
+                    <p class="property-address">📍 Budhanilkantha, Kathmandu</p>
+                    <div class="property-features">
+                         <span>🛏️ 5 Bedrooms</span>
+                        <span>🚿 5 Bathrooms</span>
+                        <span>📐 9 Aana</span>
+                        
+                    </div>
+                    <div class="property-description">
+                        The bungalow for sale is located in Budhanilkantha, Kathmandu. The bungalow has a land area of 9 aana featuring 4 bedrooms, 5 bathrooms, 1 living room, 1 kitchen and dining, 1 movie theatre, 1 glass room, 1 yoga room, and 1 servant quarter. The servant quarter includes 1 room, 1 kitchen, and 1 bathroom. The bungalow is luxurious and beautiful. The bungalow for sale has beautiful interior and exterior designs with parking space for 2 cars and 4 bikes having road access of 16 feet. The bungalow has many facilities such as electricity, garden, fish pond, reserve tank of 13000 liter, open space, ample sunlight, water supply, cable connection, internet connection, and many more.
+                    </div>
+                    <div class="property-footer">
+                        <span class="property-type">Villa</span>
+                        <button class="inquire-btn">Inquire Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Property 7 -->
+            <div class="property-card" data-type="commercial" data-price="70000" data-status="rent" data-location="Kathmandu">
+                <div class="property-image">
+                    <img src="https://backend.lalpurjanepal.com.np/media/properties/properties/1000025932.jpg" alt="Commercial Building Mid Baneshwor">
+                    <div class="property-badge rent">For Rent</div>
+                    <div class="property-actions">
+                        <button class="action-btn favorite">❤️</button>
+                        <button class="action-btn share">📤</button>
+                    </div>
+                </div>
+                <div class="property-content">
+                    <div class="property-price">₨ 70,000/month</div>
+                    <h3 class="property-title">Commercial Building for Rent at Mid Baneshwor</h3>
+                    <p class="property-address">📍 Mid Baneshwor | Apex Colleger</p>
+                    <div class="property-features">
+                
+                        <span>🅿️ Parking</span>
+                        <span>🚌 Public Transport</span>
+                        <span>📐 8.5 Aana</span>
+                    </div>
+                    <div class="property-description">
+                       Himalayanrealtors is delighted to present this beautiful and well-furnished rental space located in the highly convenient area of Mid-Baneshwor. Designed for comfort and practicality, it offers a peaceful environment with easy access to essential facilities, making it ideal for both living and office use. The space is thoughtfully maintained, ensuring a pleasant experience for tenants. In addition, Himalayanrealtors provides mortgage support at a low interest rate.
+                    </div>
+                    <div class="property-footer">
+                        <span class="property-type">Commercial</span>
+                        <button class="inquire-btn">Inquire Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Property 8 -->
+            <div class="property-card" data-type="house" data-price="18000000" data-status="sale" data-location="Kathmandu">
+                <div class="property-image">
+                     <img src="https://backend.lalpurjanepal.com.np/media/properties/properties/image_picker_A792CCF6-A179-4950-8ED5-79F62E91EBB2-4492-000000E88D535AD9.jpg" alt="House for Sale at Kalanki">
+                    <div class="property-badge">For Sale</div>
+                    <div class="property-actions">
+                        <button class="action-btn favorite">❤️</button>
+                        <button class="action-btn share">📤</button>
+                    </div>
+                </div>
+                <div class="property-content">
+                    <div class="property-price">₨ 1.8 Crore</div>
+                    <h3 class="property-title">House for Sale at Kalanki</h3>
+                    <p class="property-address">📍 Kalanki | LRI School</p>
+                    <div class="property-features">
+                        <span>🛏️ 5 Bedrooms</span>
+                        <span>🚿 4 Bathrooms</span>
+                        <span>🪑 2 Living</span>
+                        <span>🅿️ 1 car parking</span>
+                        <span>📐 3 Aana</span>
+                    </div>
+                    <div class="property-description">
+                      Himalayanrealtors offers a brand-new, modern 3-aana house for sale in the peaceful Kalanki area near LRI School. With 2.5 floors of comfortable living space and an affordable price, it’s ideal for families. Mortgage support is also available.
+                    </div>
+                    <div class="property-footer">
+                        <span class="property-type">House</span>
+                        <button class="inquire-btn">Inquire Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Property 9 -->
+            <div class="property-card" data-type="land" data-price="3500000" data-status="sale" data-location="Kathmandu">
+                <div class="property-image">
+                    <img src="https://backend.lalpurjanepal.com.np/media/properties/properties/WhatsApp_Image_2025-10-29_at_20.05.28_ab27ba6e.jpg" alt="Land Kathmandu">
+                    <div class="property-badge">For Sale</div>
+                    <div class="property-actions">
+                        <button class="action-btn favorite">❤️</button>
+                        <button class="action-btn share">📤</button>
+                    </div>
+                </div>
+                <div class="property-content">
+                    <div class="property-price">35 Lakh Per Aana</div>
+                    <h3 class="property-title">Land for Sale at Tarkeshwor</h3>
+                    <p class="property-address">📍 Tarkeshwor | Sunflower School</p>
+                    <div class="property-features">
+                        <span>📐 5.5 Aana</span>
+                        <span>🛣️ 12 Feet Road Access</span>
+                        <span>🚌 500m Public Transport </span>
+                    </div>
+                    <div class="property-description">
+                        Himalayanrealtors brings you this beautiful piece of land for sale in Tarkeshwor, near Sunflower School. The total land area of this property is 5 Aana 2 Paisa, facing south-east, with 12 feet road access. This property is perfect for families, offering a peaceful environment and convenient location. The price range is very affordable, making it a great investment opportunity. Himalayan Realtors provides home loan support on this property at a very low-interest rate.
+                    </div>
+                    <div class="property-footer">
+                        <span class="property-type">Land</span>
+                        <button class="inquire-btn">Inquire Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Property 10 -->
+            <div class="property-card" data-type="commercial" data-price="20000" data-status="rent" data-location="Tripureshwor Kathmandu">
+                <div class="property-image">
+                    <img src="https://backend.lalpurjanepal.com.np/media/properties/properties/20250731_160815.jpg" alt="Showroom">
+                    <div class="property-badge rent">For Rent</div>
+                    <div class="property-actions">
+                        <button class="action-btn favorite">❤️</button>
+                        <button class="action-btn share">📤</button>
+                    </div>
+                </div>
+                <div class="property-content">
+                    <div class="property-price">₨ 20 thousands/month</div>
+                    <h3 class="property-title">Commercial Space for Rent at Tripureshwor</h3>
+                    <p class="property-address">📍 Tripureshwor, Kathmandu</p>
+                    <div class="property-features">
+                        <span>🏬 4107 sq.ft.</span>
+                        <span>🚗 Main Road</span>
+                        <span>🛗 Lift</span>
+                    </div>
+                    <div class="property-description">
+                      Himalayanrealtors presents you this beautiful property for rent at Tripureshwor, offering every facility you may need in a highly commercial and convenient area. Himalayanrealtors can assist you with every service required to make this ideal space yours, ensuring a smooth and hassle-free process. If you need any help regarding a loan, Himalayanrealtors provides mortgage support, making financing easier. 
+                    </div>
+                    <div class="property-footer">
+                        <span class="property-type">Commercial</span>
+                        <button class="inquire-btn">Inquire Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Property 11 -->
+            <div class="property-card" data-type="house" data-price="50000000" data-status="sale" data-location="Kathmandu">
+                <div class="property-image">
+                    <img src="https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/11/17/60d2842a-b9cb-b270-7e32-77632c51e309.webp?x-image-process=image/resize,m_lfit,h_500,w_500" alt="Apartment Boudha">
+                    <div class="property-badge">For Sale</div>
+                    <div class="property-actions">
+                        <button class="action-btn favorite">❤️</button>
+                        <button class="action-btn share">📤</button>
+                    </div>
+                </div>
+                <div class="property-content">
+                    <div class="property-price">₨ 5 Crore</div>
+                    <h3 class="property-title">House For Sale at Maya Colony, Chundevi Baluwatar</h3>
+                    <p class="property-address">📍 Chundevi, Kathmandu-15, Kathmandu</p>
+                    <div class="property-features">
+                        <span>🛏️ 3 Bedrooms</span>
+                        <span>🛋️ 2 Living Rooms</span>
+                        <span>🚿 5 Bathrooms</span>
+                        <span>🍽️ 1 Kitchen</span>
+                        <span>📐 3 Aana 3 Paisa 2 Dam</span>
+                    </div>
+                    <div class="property-description">
+                      Himalayanrealtors offers this beautiful 2.5-storey house for sale at Maya Residency, Chundevi Marga, Kathmandu-4, situated in a peaceful and posh area. The home features 3 bedrooms with attached bathrooms, 2 living rooms, a kitchen and dining area, plus a pooja and store room. With over 20 ft road access and parking for 2 cars, it provides comfort and convenience.
+                    </div>
+                    <div class="property-footer">
+                        <span class="property-type">House</span>
+                        <button class="inquire-btn">Inquire Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Property 12 -->
+            <div class="property-card" data-type="house" data-price="135000" data-status="rent" data-location="Marajgung | Kathmandu">
+                <div class="property-image">
+                    <img src="https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/11/24/234ebd1d-afda-ac28-f20b-64fc2e92c2c0.jpg?x-image-process=image/resize,m_lfit,h_500,w_500" alt="House Jawalakhel">
+                    <div class="property-badge rent">For Rent</div>
+                    <div class="property-actions">
+                        <button class="action-btn favorite">❤️</button>
+                        <button class="action-btn share">📤</button>
+                    </div>
+                </div>
+                <div class="property-content">
+                    <div class="property-price">₨ 1,35,000/month</div>
+                    <h3 class="property-title">House on rent at Marajgung, Bansbari area KTM.</h3>
+                    <p class="property-address">📍 Kathmandu-3 | Kathmandu</p>
+                    <div class="property-features">
+                        <span>🛏️ 4 Bedroom</span>
+                        <span>🚿 4 Bathroom</span>
+                        <span>🍽️ 1 Kitchen</span>                        
+                        <span>🏢 3 Floor</span>                        
+                        <span>📐 16 Aana</span>
+                    </div>
+                    <div class="property-description">
+                      Himalayanrealtors presents a spacious 4-bedroom house for rent at Maharajgunj, Bansbari, featuring a garden, ample parking, and 16 aana land—ideal for residence, office, NGO, or travel use. It includes 1 living room, 1 lobby, 1 kitchen, and 4 bathrooms (3 attached) for comfortable and flexible living. Rent:135k
+                    </div>
+                    <div class="property-footer">
+                        <span class="property-type">House</span>
+                        <button class="inquire-btn">Inquire Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Property 13 -->
+            <div class="property-card" data-type="commercial" data-price="40000000" data-status="sale" data-location="Gongabu Kathmandu">
+                <div class="property-image">
+                    <img src="https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/11/24/da0e44ea-c4d9-76a3-de6c-3ba105e4b326.webp?x-image-process=image/resize,m_lfit,h_500,w_500" alt="Villa Nagarkot">
+                    <div class="property-badge">For Sale</div>
+                    <div class="property-actions">
+                        <button class="action-btn favorite">❤️</button>
+                        <button class="action-btn share">📤</button>
+                    </div>
+                </div>
+                <div class="property-content">
+                    <div class="property-price">₨ 4 Crore</div>
+                    <h3 class="property-title">Commercial House for Sale at Gongabu</h3>
+                    <p class="property-address">📍
+Gongabu Bus Park| Kathmandu</p>
+                    <div class="property-features">
+                        <span> 5 Commercial Shutters</span>
+                        <span> Total Rooms</span>
+                        <span>📐 5 Aana</span>
+                    </div>
+                    <div class="property-description">
+                        Himalayanrealtors presents a highly profitable 5-shutter commercial building for sale in Gongabu, offering a stable monthly rental income of Rs. 85,000. This property includes 9 additional rooms suitable for storage, staff accommodation, or extra rental units, ensuring maximum utility and consistent cash flow. With its prime location and fully occupied shutters ideal for shops, offices, and retail businesses, this building is an excellent investment opportunity for those seeking guaranteed returns.
+                    </div>
+                    <div class="property-footer">
+                        <span class="property-type">Villa</span>
+                        <button class="inquire-btn">Inquire Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Property 14 -->
+            <div class="property-card" data-type="commercial" data-price="120000" data-status="rent" data-location="Lalitpur">
+                <div class="property-image">
+                    <img src="https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/11/25/bc871bc5-3812-a957-ba3d-6b455607d329.jpg?x-image-process=image/resize,m_lfit,h_500,w_500" alt="Commercial Thamel">
+                    <div class="property-badge rent">For Rent</div>
+                    <div class="property-actions">
+                        <button class="action-btn favorite">❤️</button>
+                        <button class="action-btn share">📤</button>
+                    </div>
+                </div>
+                <div class="property-content">
+                    <div class="property-price">₨ 1,20,000/month</div>
+                    <h3 class="property-title">House for rent sanepa</h3>
+                    <p class="property-address">📍 Sanepa, Lalitpur</p>
+                    <div class="property-features">
+                        <span>📐 8 Aana</span>
+                        <span>📐 3 Bedroom</span>
+                        <span>🏪 2 Floor</span>
+                        <span>🅿️ 2/3 Car Parking</span>
+                        <span>🍽️ 1 Kitchen Setup</span>
+                    </div>
+                    <div class="property-description">
+                     Himalayanrealtors presents a beautiful house for rent in Sanepa with a monthly rent of Rs. 120,000.
+This property features 3 spacious bedrooms and sits on an 8 aana land area.
+It offers parking space for 2–3 cars, making it ideal for comfortable living.
+Located in a prime area, it provides both convenience and a peaceful environment.
+                    </div>
+                    <div class="property-footer">
+                        <span class="property-type">Semi Commercial</span>
+                        <button class="inquire-btn">Inquire Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Property 15 -->
+            <div class="property-card" data-type="land" data-price="1792000000" data-status="sale" data-location="Lalitpur">
+                <div class="property-image">
+                    <img src="https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/11/23/c43bf669-ecb1-f108-0668-34e74bfb9343.webp?x-image-process=image/resize,m_lfit,h_500,w_500" alt="Land Hetauda">
+                    <div class="property-badge">For Sale</div>
+                    <div class="property-actions">
+                        <button class="action-btn favorite">❤️</button>
+                        <button class="action-btn share">📤</button>
+                    </div>
+                </div>
+                <div class="property-content">
+                    <div class="property-price">₨ 1 Arba 79 Crores & 20 lakhs</div>
+                    <h3 class="property-title">SANEPA – 14 ROPANI (224 Aana) LAND FOR SALE</h3>
+                    <p class="property-address">📍 Sanepa, Lalitpur</p>
+                    <div class="property-features">
+                        <span>📐 224 Aana</span>
+                        <span>💧 Irrigation</span>
+                        <span>🛣️ Road Access</span>
+                    </div>
+                    <div class="property-description">
+                       Himalayanrealtors presents 14 ropani of prime land for sale in the highly sought-after Sanepa area.
+The property offers excellent 20 ft road access, making it ideal for both residential and commercial development. With a total of 224 aana, it provides ample space in one of Kathmandu’s most premium neighborhoods.The price is set at NPR 80 lakh per aana, offering a rare investment opportunity in Sanepa.
+                    </div>
+                    <div class="property-footer">
+                        <span class="property-type">Commercial Land</span>
+                        <button class="inquire-btn">Inquire Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- No Results Message -->
+        <div class="no-results" id="noResults" style="display: none;">
+            <h3>No Properties Found</h3>
+            <p>Try adjusting your filters or search terms</p>
+            <button class="btn" id="clearAllFilters">Clear All Filters</button>
+        </div>
+
+        <!-- Load More Button -->
+        <div class="load-more-container">
+            <button class="load-more-btn" id="loadMore">Load More Properties</button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Himalayan Realtors P. Ltd. | All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="properties.js"></script>
+</body>
+</html>
